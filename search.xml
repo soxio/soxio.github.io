@@ -3,7 +3,9 @@
   <entry>
     <title></title>
     <url>/2020/02/26/helloworld/</url>
-    <content><![CDATA[<h1 id="Spring-Boot-入门"><a href="#Spring-Boot-入门" class="headerlink" title="Spring Boot 入门"></a>Spring Boot 入门</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://t.cn/AirXJZuO" target="_blank" rel="noopener">百度百科</a></p>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: Spring Boot入门</span><br><span class="line">categories: SpringBoot</span><br></pre></td></tr></table></figure>
+
+<h1 id="Spring-Boot-入门"><a href="#Spring-Boot-入门" class="headerlink" title="Spring Boot 入门"></a>Spring Boot 入门</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://t.cn/AirXJZuO" target="_blank" rel="noopener">百度百科</a></p>
 <p><strong>优点</strong></p>
 <blockquote>
 <ul>
@@ -112,12 +114,6 @@
 </li>
 </ul>
 <p>Spring Boot在启动的时候从类路径下的META-INF/spring.factories中获取EnableAutoConfiguration指定的值，将这些值作为自动配置类导入到容器中，自动配置类就生效，帮我们进行自动配置工作；以前我们需要自己配置的东西，自动配置类都帮我们完成了；</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2020/02/26/test/</url>
-    <content><![CDATA[<p><img src="//yoursite.com/2020/02/26/test/zhinai.jpg" alt="智乃"></p>
 ]]></content>
   </entry>
   <entry>
