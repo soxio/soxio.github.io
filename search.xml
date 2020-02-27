@@ -3,10 +3,8 @@
   <entry>
     <title>Spring Boot入门</title>
     <url>/2020/02/26/Spring%20Boot%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-# Spring Boot 入门
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://t.cn/AirXJZuO" target="_blank" rel="noopener">百度百科</a></p>
+    <content><![CDATA[<p>var link = “” ;<br>$(“img”).each( (i,o) =&gt; {<br>    var o = $(o);<br>    if( o.attr(“src”).indexOf(“sinaimg”) &gt; 0 ){<br>        o.attr(“referrerpolicy”,”no-referrer”);<br>        link = o.attr(“src”);<br>        o.attr(“src”,link);<br>    }<br>});</p>
+<h1 id="Spring-Boot-入门"><a href="#Spring-Boot-入门" class="headerlink" title="Spring Boot 入门"></a>Spring Boot 入门</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://t.cn/AirXJZuO" target="_blank" rel="noopener">百度百科</a></p>
 <p><strong>优点</strong></p>
 <blockquote>
 <ul>
