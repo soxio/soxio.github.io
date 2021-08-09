@@ -17,20 +17,20 @@ function say(content, author, from) {
   }
 }
 
-console.log('开启了');
-
-console.log('进入了');
-let xhr = new XMLHttpRequest();
-xhr.open('get', 'https://v1.hitokoto.cn?c=i');
-xhr.send();
-xhr.responseType = 'json';
-xhr.onload = function () {
-  if (xhr.response) {
-    say(xhr.response.hitokoto, xhr.response.from_who, xhr.response.from);
-  } else {
-    say('不经一番寒彻骨，怎得梅花扑鼻香。', '黄櫱禅师');
+window.addEventListener("load", function () {
+  let xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn?c=i');
+  xhr.send();
+  xhr.responseType = 'json';
+  xhr.onload = function () {
+    if (xhr.response) {
+      say(xhr.response.hitokoto, xhr.response.from_who, xhr.response.from);
+    } else {
+      say('不经一番寒彻骨，怎得梅花扑鼻香。', '黄櫱禅师');
+    }
   }
-}
+
+});
 
 
 
@@ -65,12 +65,12 @@ xhr.onload = function () {
         console.error(err.message);
       });
   }
-} */
+}
 
 // document.addEventListener("DOMContentLoaded", say('不经一番寒彻骨，怎得梅花扑鼻香。', '黄櫱禅师'));
 
-// document.addEventListener("DOMContentLoaded", fetchApiToSay);
-/* document.addEventListener("pjax:success", () => {
+window.addEventListener("DOMContentLoaded", fetchApiToSay);
+window.addEventListener("pjax:success", () => {
   Yun.utils.isHome() ? fetchApiToSay() : null;
 }); */
 
