@@ -16,6 +16,8 @@ function say(content, author, from) {
   }
 }
 
+
+
 /**
  * 获取在线 API
  */
@@ -48,7 +50,12 @@ function fetchApiToSay() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", say('不经一番寒彻骨，怎得梅花扑鼻香。', '黄櫱禅师'));
+
 document.addEventListener("DOMContentLoaded", fetchApiToSay);
 document.addEventListener("pjax:success", () => {
   Yun.utils.isHome() ? fetchApiToSay() : null;
 });
+
+
+console.log('自定义');
