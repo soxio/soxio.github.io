@@ -67,7 +67,6 @@ window.addEventListener("load", function () {
   }
 }
 
-// document.addEventListener("DOMContentLoaded", say('不经一番寒彻骨，怎得梅花扑鼻香。', '黄櫱禅师'));
 
 window.addEventListener("DOMContentLoaded", fetchApiToSay);
 window.addEventListener("pjax:success", () => {
