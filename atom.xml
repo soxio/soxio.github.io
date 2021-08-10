@@ -3,11 +3,11 @@
   <title>soxio的小站</title>
   
   <subtitle>All at sea</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://ajax404.tk/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://ajax404.tk/"/>
   <updated>2021-08-09T05:16:29.350Z</updated>
-  <id>http://example.com/</id>
+  <id>https://ajax404.tk/</id>
   
   <author>
     <name>soxio</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>git常用命令</title>
-    <link href="http://example.com/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://example.com/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://ajax404.tk/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://ajax404.tk/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2021-08-09T02:32:40.549Z</published>
     <updated>2021-08-09T05:16:29.350Z</updated>
     
@@ -33,19 +33,19 @@
     
     
     
-    <category term="git" scheme="http://example.com/categories/git/"/>
+    <category term="git" scheme="https://ajax404.tk/categories/git/"/>
     
     
-    <category term="git" scheme="http://example.com/tags/git/"/>
+    <category term="git" scheme="https://ajax404.tk/tags/git/"/>
     
-    <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    <category term="命令" scheme="https://ajax404.tk/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
   <entry>
     <title>hexo常用命令</title>
-    <link href="http://example.com/2021/08/06/title%20hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://example.com/2021/08/06/title%20hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://ajax404.tk/2021/08/06/title%20hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://ajax404.tk/2021/08/06/title%20hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2021-08-06T15:55:11.684Z</published>
     <updated>2021-08-06T15:55:11.694Z</updated>
     
@@ -59,15 +59,15 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    <category term="hexo" scheme="https://ajax404.tk/categories/hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/08/06/hello-world/"/>
-    <id>http://example.com/2021/08/06/hello-world/</id>
+    <link href="https://ajax404.tk/2021/08/06/hello-world/"/>
+    <id>https://ajax404.tk/2021/08/06/hello-world/</id>
     <published>2021-08-06T11:47:19.901Z</published>
     <updated>2021-08-06T11:47:19.901Z</updated>
     
