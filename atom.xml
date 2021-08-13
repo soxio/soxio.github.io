@@ -6,7 +6,7 @@
   <link href="https://ajax404.tk/atom.xml" rel="self"/>
   
   <link href="https://ajax404.tk/"/>
-  <updated>2021-08-09T05:16:29.350Z</updated>
+  <updated>2021-08-13T15:02:19.195Z</updated>
   <id>https://ajax404.tk/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ajax404.tk/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://ajax404.tk/2021/08/09/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2021-08-09T02:32:40.549Z</published>
-    <updated>2021-08-09T05:16:29.350Z</updated>
+    <updated>2021-08-13T15:02:19.195Z</updated>
     
     <content type="html"><![CDATA[<h2 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h2><h4 id="设置用户名"><a href="#设置用户名" class="headerlink" title="设置用户名"></a>设置用户名</h4><blockquote><p>git config –global user.name “你的github用户名” </p><p>git config –global user.email “你的github邮箱”</p></blockquote><h4 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h4><blockquote><p>git init</p></blockquote><h4 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h4><blockquote><p>git add .  添加全部 或者 git add <filename></p></blockquote><h4 id="提交文件到本地仓库"><a href="#提交文件到本地仓库" class="headerlink" title="提交文件到本地仓库"></a>提交文件到本地仓库</h4><blockquote><p>git commit -m ‘项目描述信息’</p></blockquote><h4 id="log记录命令"><a href="#log记录命令" class="headerlink" title="log记录命令"></a>log记录命令</h4><blockquote><p>git log  查看本地仓库版本记录</p><p>git log –oneline  简化显示</p><p>git reflog  查看回退版本步数</p></blockquote><h4 id="版本前进后退"><a href="#版本前进后退" class="headerlink" title="版本前进后退"></a>版本前进后退</h4><blockquote><p>git reset –hard 索引值 【推荐】</p><p>git reset –hard ^ 后退一步</p><p>git reset –hard ~5 后退五步</p></blockquote><h4 id="版本差异对比"><a href="#版本差异对比" class="headerlink" title="版本差异对比"></a>版本差异对比</h4><blockquote><p>git diff [历史版本][文件名]    将工作区的文件和历史版本比较，不带文件名则比较多个文件</p></blockquote><hr><h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><ul><li>创建分支  git branch [分支名]</li><li>查看分支  git branch -v</li><li>切换分支  git checkout [分支名]</li><li>合并分支<ul><li>第一步 切换到主分支    checkout [主分支]</li><li>第二步  执行 git merge [有新内容的分支名]</li></ul></li><li>合并冲突<ul><li>第一步 编辑文件，删除特殊符号</li><li>第二步 修改文件到理想状态</li><li>第三步 git add [文件名]</li><li>第四步 git commit -m ‘日志信息’  不能带文件名</li></ul></li></ul><hr><h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h4 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h4><blockquote><p>git remote add origin(别名) https: // git.coding.net/用户名/项目名.git</p></blockquote><h4 id="推送到远程仓库"><a href="#推送到远程仓库" class="headerlink" title="推送到远程仓库"></a>推送到远程仓库</h4><blockquote><p>git push origin(远程库别名) master</p></blockquote><h4 id="克隆远程仓库"><a href="#克隆远程仓库" class="headerlink" title="克隆远程仓库"></a>克隆远程仓库</h4><blockquote><p>git clone 远程仓库地址</p></blockquote><h4 id="查看或删除远程仓库地址"><a href="#查看或删除远程仓库地址" class="headerlink" title="查看或删除远程仓库地址"></a>查看或删除远程仓库地址</h4><blockquote><p> git remote -v</p><p>git remote rm origin</p></blockquote><h4 id="合并远程仓库的文件"><a href="#合并远程仓库的文件" class="headerlink" title="合并远程仓库的文件"></a>合并远程仓库的文件</h4><ul><li>方式一 git pull –rebase origin master</li><li> 方式二  </li><li>git fetch origin master   【此时只是下载，不合并工作区文件，可以使用 git checkout origin/master 切换查看下载的文件】</li><li>git merge origin/master</li></ul><h4 id="跨团队合作"><a href="#跨团队合作" class="headerlink" title="跨团队合作"></a>跨团队合作</h4><blockquote><p>fork原项目 - 增加功能 - 新建 pull requests  - 原项目主人同意合并</p></blockquote>]]></content>
     
@@ -36,7 +36,7 @@
     <category term="git" scheme="https://ajax404.tk/categories/git/"/>
     
     
-    <category term="git" scheme="https://ajax404.tk/tags/git/"/>
+    <category term="Git" scheme="https://ajax404.tk/tags/Git/"/>
     
     <category term="命令" scheme="https://ajax404.tk/tags/%E5%91%BD%E4%BB%A4/"/>
     
