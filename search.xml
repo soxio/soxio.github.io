@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>express获取GET和POST请求参数</title>
+      <link href="/2021/08/16/express%E8%8E%B7%E5%8F%96%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/"/>
+      <url>/2021/08/16/express%E8%8E%B7%E5%8F%96%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="获取GET请求参数"><a href="#获取GET请求参数" class="headerlink" title="获取GET请求参数"></a>获取GET请求参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.get(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 打印请求参数</span></span><br><span class="line">    <span class="built_in">console</span>.log(req.query);</span><br><span class="line">    res.send(req.query);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="获取POST请求参数"><a href="#获取POST请求参数" class="headerlink" title="获取POST请求参数"></a>获取POST请求参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加载解析urlencoded请求体的中间件</span></span><br><span class="line">app.use(express.urlencoded(&#123;<span class="attr">extended</span>: <span class="literal">false</span>&#125;))</span><br><span class="line"></span><br><span class="line">app.post(<span class="string">&#x27;/user&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 打印post请求参数</span></span><br><span class="line">  <span class="built_in">console</span>.log(req.body);</span><br><span class="line">  res.send(<span class="string">&#x27;ok&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> express </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> express </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Node获取GET和POST请求参数</title>
+      <link href="/2021/08/16/Node%E8%8E%B7%E5%8F%96GET%E5%92%8CPOST%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/"/>
+      <url>/2021/08/16/Node%E8%8E%B7%E5%8F%96GET%E5%92%8CPOST%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="获取GET请求参数"><a href="#获取GET请求参数" class="headerlink" title="获取GET请求参数"></a>获取GET请求参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 引入内置模块</span></span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">&#x27;url&#x27;</span>);</span><br><span class="line">app.on(<span class="string">&#x27;request&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">      <span class="comment">// 2. 获取参数对象</span></span><br><span class="line">      <span class="keyword">let</span> query = url.parse(req.url, <span class="literal">true</span>).query;</span><br><span class="line">      <span class="built_in">console</span>.log(query.name); <span class="comment">// 张三</span></span><br><span class="line">      <span class="built_in">console</span>.log(query.age); <span class="comment">// 23</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="获取POST请求参数"><a href="#获取POST请求参数" class="headerlink" title="获取POST请求参数"></a>获取POST请求参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入模块</span></span><br><span class="line"><span class="keyword">const</span> querystring = <span class="built_in">require</span>(<span class="string">&#x27;querystring&#x27;</span>);</span><br><span class="line"><span class="comment">// post请求参数是通过事件获取的</span></span><br><span class="line">app.on(<span class="string">&#x27;request&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> postParams = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">    <span class="comment">// 请求参数传递的时候触发data事件</span></span><br><span class="line">    req.on(<span class="string">&#x27;data&#x27;</span>, <span class="function"><span class="params">params</span> =&gt;</span> &#123;</span><br><span class="line">        postParams += params;</span><br><span class="line">    &#125;)</span><br><span class="line"><span class="comment">// 请求参数传递完成的时候触发data事件</span></span><br><span class="line">    req.on(<span class="string">&#x27;end&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 打印请求完成的参数</span></span><br><span class="line">        <span class="built_in">console</span>.log(querystring.parse(postParams));</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    res.end(<span class="string">&#x27;ok&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Node </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Node </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用SSH连接Github</title>
       <link href="/2021/08/14/%E4%BD%BF%E7%94%A8SSH%E8%BF%9E%E6%8E%A5Github/"/>
       <url>/2021/08/14/%E4%BD%BF%E7%94%A8SSH%E8%BF%9E%E6%8E%A5Github/</url>
