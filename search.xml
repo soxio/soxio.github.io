@@ -154,11 +154,11 @@
     
     
     <entry>
-      <title>Node获取GET和POST请求参数</title>
+      <title>MySQL数据操作语句</title>
       <link href="/2021/08/06/MySQL%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5/"/>
       <url>/2021/08/06/MySQL%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5/</url>
       
-        <content type="html"><![CDATA[<h3 id="查询操作"><a href="#查询操作" class="headerlink" title="查询操作"></a>查询操作</h3><blockquote><p>查询全部    select * from 表名</p><p>查询语法    select [字段，字段] from 表名</p></blockquote><h3 id="增加操作"><a href="#增加操作" class="headerlink" title="增加操作"></a>增加操作</h3><blockquote><p>增加语法    insert into 表名(字段, 字段) values (值1, 值2)</p><p>示例    insert into users(username, nickname) values (‘用户名’, ‘昵称’)</p></blockquote><h3 id="更新操作"><a href="#更新操作" class="headerlink" title="更新操作"></a>更新操作</h3><blockquote><p>更新语法    update users set 字段=值, 字段=值  where 字段=值</p><p>示例    update users set nickname=’大大’,email= ‘<a href="mailto:&#49;&#50;&#51;&#x30;&#54;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#49;&#50;&#51;&#x30;&#54;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a>‘ where id = 2</p></blockquote><h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><blockquote><p>删除语法 delete from 表名 where 字段 = 值</p><p>示例    delete from users where id = 2</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h3 id="查询操作"><a href="#查询操作" class="headerlink" title="查询操作"></a>查询操作</h3><blockquote><p>查询全部    select * from 表名</p><p>查询语法    select [字段，字段] from 表名</p></blockquote><h3 id="增加操作"><a href="#增加操作" class="headerlink" title="增加操作"></a>增加操作</h3><blockquote><p>增加语法    insert into 表名(字段, 字段) values (值1, 值2)</p><p>示例    insert into users(username, nickname) values (‘用户名’, ‘昵称’)</p></blockquote><h3 id="更新操作"><a href="#更新操作" class="headerlink" title="更新操作"></a>更新操作</h3><blockquote><p>更新语法    update users set 字段=值, 字段=值  where 字段=值</p><p>示例    update users set nickname=’大大’,email= ‘<a href="mailto:&#x31;&#50;&#x33;&#48;&#x36;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x31;&#50;&#x33;&#48;&#x36;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>‘ where id = 2</p></blockquote><h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><blockquote><p>删除语法 delete from 表名 where 字段 = 值</p><p>示例    delete from users where id = 2</p></blockquote>]]></content>
       
       
       <categories>
