@@ -6,7 +6,7 @@
   <link href="https://ajax404.tk/atom.xml" rel="self"/>
   
   <link href="https://ajax404.tk/"/>
-  <updated>2021-08-21T06:51:16.687Z</updated>
+  <updated>2021-09-02T14:21:35.087Z</updated>
   <id>https://ajax404.tk/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://ajax404.tk/2021/08/19/%E6%95%B0%E7%BB%84API/"/>
     <id>https://ajax404.tk/2021/08/19/%E6%95%B0%E7%BB%84API/</id>
     <published>2021-08-19T14:55:30.519Z</published>
-    <updated>2021-08-21T06:51:16.687Z</updated>
+    <updated>2021-09-02T14:21:35.087Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/forEach.png" loading="lazy"></p><h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/map.png" loading="lazy"></p><h4 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/filter.png" loading="lazy"></p><h4 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/reduce.png" loading="lazy"></p><h4 id="every"><a href="#every" class="headerlink" title="every"></a>every</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/every.png" loading="lazy"></p><h4 id="some"><a href="#some" class="headerlink" title="some"></a>some</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/some.png" loading="lazy"></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/forEach.png" loading="lazy"></p><h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/map.png" loading="lazy"></p><h4 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/filter.png" loading="lazy"></p><h4 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h4><ul><li>推荐在回调函数后面跟上数据的初始值， 避免出错</li><li>reduce 函数只 return 一次</li></ul><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/reduce.png" loading="lazy"></p><h4 id="every"><a href="#every" class="headerlink" title="every"></a>every</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/every.png" loading="lazy"></p><h4 id="some"><a href="#some" class="headerlink" title="some"></a>some</h4><p><img src="https://cdn.jsdelivr.net/gh/soxio/imglib@master/hexo/some.png" loading="lazy"></p>]]></content>
     
     
       
