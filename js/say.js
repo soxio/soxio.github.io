@@ -32,8 +32,27 @@ window.addEventListener("load", function () {
 
 });
 
-
-
+// 播放器
+window.addEventListener("load", function () {
+  console.log('执行了');
+  let apContainer = document.createElement("div");
+  apContainer.id = "aplayer";
+  document.body.append(apContainer);
+  const ap = new APlayer({
+    container: document.getElementById("aplayer"),
+    fixed: true,
+    autoplay: true,
+    loop: 'all',
+    audio: [
+      {
+        name: "Komorebi",
+        artist: "m-taku",
+        url: "https://cdn.jsdelivr.net/gh/soxio/imglib/Komorebi.mp3",
+        cover: "https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg",
+      },
+    ],
+  });
+});
 
 /**
  * 获取在线 API
