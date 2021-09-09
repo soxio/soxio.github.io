@@ -34,6 +34,8 @@ window.addEventListener("load", function () {
 
 // 播放器
 window.addEventListener("load", function () {
+
+
   console.log('执行了');
   let apContainer = document.createElement("div");
   apContainer.id = "aplayer";
@@ -52,7 +54,10 @@ window.addEventListener("load", function () {
       },
     ],
   });
+
 });
+
+
 
 /**
  * 获取在线 API
