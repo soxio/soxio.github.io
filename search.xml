@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>引入rem布局</title>
+      <link href="/2021/09/21/%E5%BC%95%E5%85%A5rem%E5%B8%83%E5%B1%80/"/>
+      <url>/2021/09/21/%E5%BC%95%E5%85%A5rem%E5%B8%83%E5%B1%80/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><blockquote><p> npm i <a href="mailto:&#112;&#x6f;&#115;&#116;&#99;&#x73;&#115;&#45;&#x70;&#120;&#116;&#111;&#114;&#101;&#x6d;&#x40;&#x35;&#46;&#49;&#46;&#x31;">&#112;&#x6f;&#115;&#116;&#99;&#x73;&#115;&#45;&#x70;&#120;&#116;&#111;&#114;&#101;&#x6d;&#x40;&#x35;&#46;&#49;&#46;&#x31;</a> amfe-flexible</p></blockquote><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul><li>main.js</li></ul><pre class="language-none"><code class="language-none">import &#39;amfe-flexible&#x2F;index.js&#39;</code></pre><ul><li>在public/index.html加入meta标签</li></ul><pre class="language-none"><code class="language-none">&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1,maximum-scale&#x3D;1, minimum-scale&#x3D;1, user-scalable&#x3D;no&quot;&gt;</code></pre><ul><li> 在package.json项目配置里设置postcss</li></ul><pre class="language-none"><code class="language-none">&quot;postcss&quot;: &#123;   &quot;plugins&quot;: &#123;     &quot;autoprefixer&quot;: &#123;       &quot;overrideBrowserslist&quot;: [         &quot;Android 4.1&quot;,         &quot;iOS 7.1&quot;,         &quot;Chrome &gt; 31&quot;,         &quot;ff &gt; 31&quot;,         &quot;ie &gt;&#x3D; 8&quot;       ]     &#125;,     &quot;postcss-pxtorem&quot;: &#123;       &quot;rootValue&quot;: 37.5,       &quot;propList&quot;: [         &quot;*&quot;       ]     &#125;   &#125; &#125;,</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> rem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rem </tag>
+            
+            <tag> 布局 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue路由的基本使用</title>
       <link href="/2021/09/07/vue%E8%B7%AF%E7%94%B1/"/>
       <url>/2021/09/07/vue%E8%B7%AF%E7%94%B1/</url>
