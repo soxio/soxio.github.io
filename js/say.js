@@ -63,6 +63,9 @@ window.addEventListener("load", function () {
  * 获取在线 API
  */
 function fetchApiToSay() {
+  let apContainer = document.createElement("div");
+  apContainer.id = "aplayer";
+  document.body.append(apContainer);
   if (CONFIG.say.api) {
     fetch(CONFIG.say.api)
       .then((res) => {
