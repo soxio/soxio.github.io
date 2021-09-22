@@ -36,24 +36,24 @@ function say(content, author, from) {
 window.addEventListener("load", function () {
 
 
-  console.log('执行了');
+
   let apContainer = document.createElement("div");
   apContainer.id = "aplayer";
   document.body.append(apContainer);
-  // const ap = new APlayer({
-  //   container: document.getElementById("aplayer"),
-  //   fixed: true,
-  //   autoplay: true,
-  //   loop: 'all',
-  //   audio: [
-  //     {
-  //       name: "Komorebi",
-  //       artist: "m-taku",
-  //       url: "https://cdn.jsdelivr.net/gh/soxio/imglib/Komorebi.mp3",
-  //       cover: "https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg",
-  //     },
-  //   ],
-  // });
+  const ap = new APlayer({
+    container: document.getElementById("aplayer"),
+    fixed: true,
+    autoplay: true,
+    loop: 'all',
+    audio: [
+      {
+        name: "Komorebi",
+        artist: "m-taku",
+        url: "https://cdn.jsdelivr.net/gh/soxio/imglib/Komorebi.mp3",
+        cover: "https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg",
+      },
+    ],
+  });
 
 });
 
@@ -63,9 +63,6 @@ window.addEventListener("load", function () {
  * 获取在线 API
  */
 function fetchApiToSay() {
-  let apContainer = document.createElement("div");
-  apContainer.id = "aplayer";
-  document.body.append(apContainer);
   if (CONFIG.say.api) {
     fetch(CONFIG.say.api)
       .then((res) => {
