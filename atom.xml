@@ -6,7 +6,7 @@
   <link href="https://ajax404.tk/atom.xml" rel="self"/>
   
   <link href="https://ajax404.tk/"/>
-  <updated>2021-12-31T12:00:29.683Z</updated>
+  <updated>2022-02-13T14:22:42.698Z</updated>
   <id>https://ajax404.tk/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue常用语法总结</title>
+    <link href="https://ajax404.tk/2022/02/13/vue%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>https://ajax404.tk/2022/02/13/vue%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</id>
+    <published>2022-02-13T14:23:18.993Z</published>
+    <updated>2022-02-13T14:22:42.698Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h2><pre class="language-vue" data-language="vue"><code class="language-vue">export default &#123;  data() &#123;    return &#123;      screenHeight: null    &#125;  &#125;,  watch: &#123;    &#x2F;&#x2F; 方式一 适用与简单数据类型    &#x2F;&#x2F; screenHeight(newVal) &#123;    &#x2F;&#x2F;   console.log(newVal);    &#x2F;&#x2F; &#125;,    &#x2F;&#x2F; 方式二 适用与简单和复杂数据类型    screenHeight: &#123;      handler(val) &#123;        console.log(val);      &#125;,      deep: true, &#x2F;&#x2F; 深度监听，复杂数据类型需要开启      immediate: true &#x2F;&#x2F; 初始化监听    &#125;  &#125;,  mounted() &#123;    &#x2F;&#x2F; 监听屏幕分辨率事件    window.addEventListener(&#39;resize&#39;, () &#x3D;&gt; &#123;      this.screenHeight &#x3D; screen.height    &#125;)  &#125;,&#125;</code></pre><h2 id="动态绑定class"><a href="#动态绑定class" class="headerlink" title="动态绑定class"></a>动态绑定class</h2><h3 id="方式1-对象形式"><a href="#方式1-对象形式" class="headerlink" title="方式1 对象形式"></a>方式1 对象形式</h3><pre class="language-vue" data-language="vue"><code class="language-vue">:class&#x3D;&quot;&#123;&#39;red&#39;: current &#x3D;&#x3D;&#x3D; index&#125;&quot;</code></pre><h3 id="方式2-三元表达式"><a href="#方式2-三元表达式" class="headerlink" title="方式2 三元表达式"></a>方式2 三元表达式</h3><pre class="language-none"><code class="language-none">:class&#x3D;&quot;current &#x3D;&#x3D;&#x3D; index ? &#39;red&#39;:&#39;&#39;&quot;</code></pre><h2 id="动态绑定style"><a href="#动态绑定style" class="headerlink" title="动态绑定style"></a>动态绑定style</h2><h3 id="方式1-对象形式-1"><a href="#方式1-对象形式-1" class="headerlink" title="方式1 对象形式"></a>方式1 对象形式</h3><pre class="language-vue" data-language="vue"><code class="language-vue">&lt;div :style&#x3D;&quot;&#123; color: &#39;red&#39; &#125;&quot;&gt;哈哈&lt;&#x2F;div&gt;</code></pre><h3 id="方式2-三元表达式-1"><a href="#方式2-三元表达式-1" class="headerlink" title="方式2 三元表达式"></a>方式2 三元表达式</h3><pre class="language-vue" data-language="vue"><code class="language-vue">&lt;div :style&#x3D;&quot;&#123; color: (current &gt; 0 ? &#39;red&#39; : &#39;green&#39;) &#125;&quot;&gt;哈哈&lt;&#x2F;div&gt;</code></pre><h3 id="方式3-绑定data数据"><a href="#方式3-绑定data数据" class="headerlink" title="方式3 绑定data数据"></a>方式3 绑定data数据</h3><pre class="language-vue" data-language="vue"><code class="language-vue">:style&#x3D;&quot;styleObject&quot;</code></pre><pre class="language-vue" data-language="vue"><code class="language-vue">data() &#123;    return&#123;      styleObject: &#123;        color: &#39;red&#39;,        fontSize: &#39;13px&#39;      &#125;      &#125;&#125;</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;watch&quot;&gt;&lt;a href=&quot;#watch&quot; class=&quot;headerlink&quot; title=&quot;watch&quot;&gt;&lt;/a&gt;watch&lt;/h2&gt;&lt;pre class=&quot;language-vue&quot; data-language=&quot;vue&quot;&gt;&lt;code class=&quot;la</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://ajax404.tk/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://ajax404.tk/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>2021年终总结</title>
