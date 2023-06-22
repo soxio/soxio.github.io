@@ -43,11 +43,11 @@
   </entry>
   
   <entry>
-    <title>vue路由的基本使用</title>
+    <title>VMware固定IP地址</title>
     <link href="https://ajax404.tk/2023/06/22/VMware%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/"/>
     <id>https://ajax404.tk/2023/06/22/VMware%E5%9B%BA%E5%AE%9AIP%E5%9C%B0%E5%9D%80/</id>
     <published>2023-06-22T11:35:57.706Z</published>
-    <updated>2023-06-19T09:03:19.911Z</updated>
+    <updated>2023-06-22T11:43:04.935Z</updated>
     
     <content type="html"><![CDATA[<h3 id="VMware固定IP且可以联网"><a href="#VMware固定IP且可以联网" class="headerlink" title="VMware固定IP且可以联网"></a>VMware固定IP且可以联网</h3><h3 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h3><ol><li>VMnet8 网卡设置为自动获取ip</li><li>虚拟网络重置为默认</li><li>虚拟机设置为nat模式</li><li>Nat设置查看网关地址</li><li>DHCP查看固定ip地址范围</li></ol><h2 id="设置网络"><a href="#设置网络" class="headerlink" title="设置网络"></a>设置网络</h2><h4 id="修改网络配置命令"><a href="#修改网络配置命令" class="headerlink" title="修改网络配置命令"></a>修改网络配置命令</h4><pre class="language-none"><code class="language-none"># 编辑网络配置文件，文件不一定是ens33这个名字vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</code></pre><h4 id="详细配置"><a href="#详细配置" class="headerlink" title="详细配置"></a>详细配置</h4><pre class="language-none"><code class="language-none">#设置静态模式BOOTPROTO&#x3D;staticONBOOT&#x3D;yes#ip地址【DHCP中的范围内的】IPADDR&#x3D;192.168.32.130 #子网掩码NETMASK&#x3D;255.255.255.0#网关【刚刚我们在NAT设置中配置的】GATEWAY&#x3D;192.168.32.2DNS1&#x3D;223.5.5.5DNS2&#x3D;114.114.114.114</code></pre><h4 id="重启网卡"><a href="#重启网卡" class="headerlink" title="重启网卡"></a>重启网卡</h4><pre class="language-none"><code class="language-none">#重启网卡service network restart</code></pre><h2 id="重启电脑后无网络的问题"><a href="#重启电脑后无网络的问题" class="headerlink" title="重启电脑后无网络的问题"></a>重启电脑后无网络的问题</h2><ol><li>重启VMnetDHCP服务</li><li>重启VMware NAT service服务</li></ol>]]></content>
     
